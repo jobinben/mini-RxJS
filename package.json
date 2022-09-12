@@ -1,0 +1,24 @@
+{
+  "name": "mini-RxJS",
+  "version": "0.0.1",
+  "description": "为了更好清晰的理解响应式、函数式、流等概念的体现，来实现一个简易版的RxJS，使用Observables的响应式编程的库。\r RxJS 是使用 Observables 的响应式编程的库，它使编写异步或基于回调的代码更容易。",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jobinben/mini-RxJS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jobinben/mini-RxJS/issues"
+  },
+  "homepage": "https://github.com/jobinben/mini-RxJS#readme",
+  "dependencies": {
+    "rxjs": "^7.5.6"
+  }
+}
