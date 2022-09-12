@@ -1,3 +1,4 @@
+import { pipeFromArray } from "./util/pipe.js"
 class Subscription {
     constructor() {
         this._teardowns = [];
@@ -40,5 +41,8 @@ export class Observable {
         const subscriber = new Subscriber(observer);
         subscriber.add(this._subscribe(subscriber));
         return subscriber;
+    }
+    pipe(...operations) {
+        return pipeFromArray(operations)(this);
     }
 }

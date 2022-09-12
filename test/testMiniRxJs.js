@@ -1,4 +1,5 @@
 import { Observable } from "../src/index.js";
+import { map } from "../src/operators/map.js";
 
 const source = new Observable((ob) => {
     let i = 0;
@@ -12,7 +13,10 @@ const source = new Observable((ob) => {
     }
 });
 
-const subscriber = source.subscribe({
+const subscriber = source.pipe(
+    map(i => i++),
+    map(i => i * 10),
+).subscribe({
     next: (i) => console.log('i: ', i),
     error: (err) => console.error('err: ', err),
     complete: () => console.log('complete...')
