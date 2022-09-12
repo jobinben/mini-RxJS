@@ -4,5 +4,5 @@ RxJS 是使用 Observables 的响应式编程的库，它使编写异步或基�
 
 
 # 实现内容
-1. Observable、Observer、Subscription等概念来了解事件的订阅和生成以及订阅的取消。
-2. operator和pipe的实现以及对数据每层的处理。
+1. Observable、Subscribe、Subscription等概念来了解事件的订阅和生成以及订阅的取消。
+2. operator的map操作符和pipe的实现以及对数据流的每一层的处理。
